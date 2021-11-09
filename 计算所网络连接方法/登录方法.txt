@@ -1,0 +1,19 @@
+外网登录
+
+步骤一：ssh bridge@62.234.201.16
+密码 HwjBridgeIct!
+
+步骤二：到 tx-cloud-0 节点后
+ssh -p 51000 username@localhost 
+可以登录到Node节点，密码是 LDAP 密码。注意：@后面必须是"localhost"
+
+
+内网登录（需要在实验室的网络环境下登录，建议使用Node2节点）
+
+方法1：Node0节点，与跳板机登录到的是同一个节点
+ssh username@10.208.120.10
+密码是LDAP密码。
+
+方法2：Node2节点，实验室建议使用此节点
+ssh username@10.208.120.11
+密码是LDAP密码。
